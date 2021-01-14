@@ -20,6 +20,4 @@ print(s.simulate(c))
 c.append(cirq.measure(q, key = 'result'))
 
 # Simulate measurement outcomes using the computed probabilities
-print(s.run(c, repetitions=1000).histogram(key='result'))
-
-
+print(s.run(c, repetitions = 1000).histogram(key = 'result'))
